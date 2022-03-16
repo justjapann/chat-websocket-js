@@ -10,10 +10,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Script to emit/receive events from socket.io server -->
     <script defer src="chat.js"></script>
 
-    <!-- Stylesheet -->
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
@@ -64,7 +62,6 @@
       .error {
         border-color: #fa7962 !important;
       }
-      /* default message styling for server notifications */
       .message {
         background-color: rgb(223, 174, 230);
         color: #333;
@@ -74,7 +71,6 @@
         padding: 0.5rem;
         margin-top: 1rem;
       }
-      /* change colors and alignment for self and others messages */
       .self-message {
         background-color: #ccffcc;
         text-align: right;
@@ -88,11 +84,7 @@
   <body>
     <div id="app">
       <h1 class="center">Chat app</h1>
-
-      <!-- Chat messages will be appended inside this container -->
       <div id="chatContainer"></div>
-
-      <!-- Form to enter and submit new chat messages -->
       <div class="center">
         <form id="messageForm">
           <input class="input center" type="text" id="messageInput" />
